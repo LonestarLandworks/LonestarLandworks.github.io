@@ -113,7 +113,7 @@
       background: linear-gradient(160deg, #1A0D05 0%, #2C1A0E 50%, #1A0D05 100%);
       display: flex; flex-direction: column; align-items: center; justify-content: center;
       text-align: center;
-      padding: 100px 32px 60px;
+      padding: 20px 32px 40px;
       position: relative;
       overflow: hidden;
     }
@@ -248,7 +248,7 @@
     .mid-cta-btn:hover { opacity: 0.9; }
 
     /* ABOUT */
-    #about { background: var(--earth); padding: 100px 60px; }
+    #about { background: var(--earth); padding: 60px 60px; }
     .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
     .about-body { font-size: 0.95rem; color: var(--tan); line-height: 1.8; font-weight: 300; margin-bottom: 20px; }
     .about-body strong { color: var(--cream); font-weight: 600; }
@@ -372,7 +372,7 @@
     .map-wrap { max-width: 400px; margin: 0 auto; }
 
     /* REVIEWS */
-    #reviews { background: var(--cream); padding: 100px 60px; text-align: center; }
+    #reviews { background: var(--cream); padding: 100px 60px 8px; text-align: center; }
     #reviews .section-title { color: var(--earth); }
     #reviews .divider { margin: 20px auto 40px; }
     .testimonial-wrap { max-width: 700px; margin: 0 auto; }
@@ -412,7 +412,7 @@
     .review-link:hover { border-color: var(--orange); }
 
     /* FAQ */
-    #faq { background: var(--earth); padding: 100px 60px; }
+    #faq { background: var(--earth); padding: 100px 60px 40px; }
     #faq .section-title { color: var(--cream); }
     .faq-list { display: flex; flex-direction: column; max-width: 760px; margin: 0 auto; }
     .faq-item { border-bottom: 1px solid var(--earth-light); }
@@ -431,7 +431,7 @@
     .faq-a.open { max-height: 300px; padding-bottom: 20px; }
 
     /* CONTACT */
-    #contact { background: var(--dark); padding: 100px 60px; }
+    #contact { background: var(--dark); padding: 40px 60px 8px; }
     #contact .section-title { color: var(--cream); }
     .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 40px; }
     .contact-details { display: flex; flex-direction: column; gap: 24px; }
@@ -468,9 +468,9 @@
     footer {
       background: var(--earth);
       border-top: 1px solid var(--earth-light);
-      padding: 40px 60px;
-      display: flex; align-items: center; justify-content: space-between;
-      flex-wrap: wrap; gap: 20px;
+      padding: 8px 60px;
+      display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start;
+      flex-wrap: wrap; gap: 4px;
     }
     .footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; letter-spacing: 3px; color: var(--cream); }
     .footer-logo span { color: var(--orange); }
@@ -513,7 +513,7 @@
 
 <!-- NAV -->
 <nav>
-  <a class="nav-logo" href="#hero">LONESTAR <span>LANDWORKS</span></a>
+  <a class="nav-logo" href="#hero"><img src="https://raw.githubusercontent.com/LonestarLandworks/LonestarLandworks.github.io/main/logo-circle.png" alt="Lonestar Landworks Logo" style="height:72px;width:72px;object-fit:contain;margin-right:10px;vertical-align:middle;margin-top:-4px;"/>LONESTAR <span>LANDWORKS</span></a>
   <div class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')">
     <span></span><span></span><span></span>
   </div>
@@ -529,7 +529,8 @@
 
 <!-- HERO -->
 <section id="hero">
-  <span class="hero-tag">East Texas Site Work &amp; Demolition</span>
+  <img src="https://raw.githubusercontent.com/LonestarLandworks/LonestarLandworks.github.io/main/logo-circle.png" alt="Lonestar Landworks Logo" style="width:340px;height:340px;object-fit:contain;margin-top:0;margin-bottom:16px;margin-left:-30px;"/>
+  <span class="hero-tag" style="margin-top:-40px;">East Texas Site Work &amp; Demolition</span>
   <h1 class="hero-title">Lonestar<br/><span>Landworks</span></h1>
   <p class="hero-sub">Kilgore, TX &mdash; Built to Get It Done</p>
   <div class="hero-btns">
@@ -612,12 +613,10 @@
       <p class="about-body">Lonestar Landworks &amp; Demolition is a locally owned and operated site work company based in Kilgore, TX. We run a Kubota SVL97-2 enclosed tracked skid steer — one of the most capable machines in its class — and we own it outright. No rental markups, ever.</p>
       <p class="about-body">We serve residential customers, mobile home dealers, real estate investors, GCs, oilfield contractors, and commercial properties across East Texas. <strong>No surprise charges. No scope creep.</strong></p>
       <p class="about-body">We're also partnered with trusted local tradesmen for <strong>septic, plumbing, electrical, tree services, and asphalt</strong> — so if your project needs more than dirt work, we can coordinate the whole thing. One point of contact, start to finish.</p>
-      <div class="equip-box">
-        <div class="equip-title">Our Equipment</div>
-        <p class="equip-desc">We run a Kubota SVL97-2 enclosed tracked skid steer with a general bucket and root grapple — owned outright, no rental markups passed to you. It's a capable machine that handles the bulk of what we do. When a job calls for something outside our setup, we're straight with you about it and we figure it out.</p>
-      </div>
+
     </div>
     <div class="about-stats">
+      <img src="https://raw.githubusercontent.com/LonestarLandworks/LonestarLandworks.github.io/main/logo-circle.png" alt="Lonestar Landworks Logo" style="width:380px;height:380px;object-fit:contain;margin:-80px auto -60px;display:block;"/>
       <div class="stat-row"><div class="stat-num">15+</div><div class="stat-desc">Years Operating Experience</div></div>
       <div class="stat-row"><div class="stat-num">5★</div><div class="stat-desc">Star Rated on Google &amp; Facebook</div></div>
       <div class="stat-row"><div class="stat-num">10+</div><div class="stat-desc">East Texas Counties Served</div></div>
@@ -926,6 +925,7 @@
 
 <!-- FOOTER -->
 <footer>
+  <img src="https://raw.githubusercontent.com/LonestarLandworks/LonestarLandworks.github.io/main/logo-circle.png" alt="Lonestar Landworks Logo" style="width:300px;height:300px;object-fit:contain;display:block;margin-left:-20px;margin-bottom:-20px;"/>
   <div class="footer-logo">LONESTAR <span>LANDWORKS</span> &amp; DEMOLITION</div>
   <ul class="footer-links">
     <li><a href="#services">Services</a></li>
