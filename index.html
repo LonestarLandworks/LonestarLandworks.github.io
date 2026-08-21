@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lonestar Landworks &amp; Demolition | Excavation Tyler &amp; Kilgore TX</title>
-  <meta name="description" content="Lonestar Landworks &amp; Demolition — East Texas excavation, site prep, mobile home pads, land clearing, demolition and more. Based in Kilgore TX. Free quotes."/>
-  <meta name="keywords" content="excavation Kilgore TX, mobile home pad Tyler TX, land clearing East Texas, demolition contractor, site prep, French drain, grading"/>
+  <title>Pad Construction, Driveways &amp; Sod | East Texas | Lonestar Landworks</title>
+  <meta name="description" content="East Texas pad construction, gravel driveways, sod installation, and site work. Mobile home pads, RV pads, flagstone, and more — Tyler, Kilgore, Longview TX. Free quotes."/>
+  <meta name="keywords" content="pad construction Tyler TX, mobile home pad Kilgore TX, gravel driveway East Texas, sod installation Tyler TX, flagstone patio Kilgore TX, site prep, grading, dirt work East Texas"/>
   <meta name="robots" content="index, follow"/>
   <meta property="og:title" content="Lonestar Landworks &amp; Demolition | Kilgore TX"/>
   <meta property="og:description" content="East Texas excavation, site prep, and demolition. Based in Kilgore TX. Free quotes."/>
@@ -507,6 +507,43 @@
       .mid-cta { padding: 40px 24px; }
       footer { padding: 32px 24px; }
     }
+
+    /* NAV DROPDOWN */
+    .nav-dropdown { position: relative; }
+    .nav-dropdown > a::after { content: ' ▾'; font-size: 0.65rem; opacity: 0.8; }
+    .dropdown-menu {
+      display: none; position: absolute; top: calc(100% + 8px); left: -16px;
+      background: rgba(18,8,0,0.98); border: 1px solid var(--earth-light);
+      border-top: 2px solid var(--orange); min-width: 230px; z-index: 200;
+      flex-direction: column; padding: 6px 0; box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+    }
+    .nav-dropdown:hover .dropdown-menu { display: flex; }
+    .dropdown-menu a {
+      padding: 10px 20px; display: block;
+      font-family: 'Barlow Condensed', sans-serif; font-size: 0.76rem;
+      font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
+      color: var(--tan) !important; text-decoration: none;
+      transition: color 0.2s, background 0.2s; white-space: nowrap;
+    }
+    .dropdown-menu a:hover { color: var(--orange) !important; background: var(--earth-mid); }
+    @media (max-width: 768px) {
+      .nav-dropdown > a::after { display: none; }
+      .dropdown-menu {
+        display: flex; position: static; background: none; border: none; box-shadow: none;
+        border-left: 2px solid var(--earth-light); margin-left: 8px; padding: 4px 0; min-width: auto;
+      }
+      .dropdown-menu a { padding: 6px 16px; font-size: 0.72rem; }
+    }
+
+    /* SERVICE CARD LINKS */
+    a.service-card { text-decoration: none; display: block; }
+    .service-link {
+      display: inline-block; margin-top: 14px;
+      font-family: 'Barlow Condensed', sans-serif; font-size: 0.72rem;
+      letter-spacing: 2px; text-transform: uppercase; color: var(--orange);
+      border-bottom: 1px solid rgba(232,101,10,0.3); transition: border-color 0.2s;
+    }
+    a.service-card:hover .service-link { border-color: var(--orange); }
   </style>
 </head>
 <body>
@@ -518,11 +555,18 @@
     <span></span><span></span><span></span>
   </div>
   <ul class="nav-links" id="navLinks">
-    <li><a href="#services">Services</a></li>
+    <li class="nav-dropdown">
+      <a href="#services">Services</a>
+      <div class="dropdown-menu">
+        <a href="pad-construction.html">Pad Construction</a>
+        <a href="driveways-grading.html">Driveways &amp; Grading</a>
+        <a href="sod-landscaping.html">Sod &amp; Landscaping</a>
+        <a href="flagstone-hardscaping.html">Flagstone &amp; Hardscaping</a>
+      </div>
+    </li>
     <li><a href="#about">About</a></li>
     <li><a href="#beforeafter">Before &amp; After</a></li>
     <li><a href="#reviews">Reviews</a></li>
-    <li><a href="#faq">FAQ</a></li>
     <li><a href="#contact" class="nav-cta">Free Quote</a></li>
   </ul>
 </nav>
@@ -530,9 +574,9 @@
 <!-- HERO -->
 <section id="hero">
   <img src="https://raw.githubusercontent.com/LonestarLandworks/LonestarLandworks.github.io/main/logo-circle.png" alt="Lonestar Landworks Logo" style="width:340px;height:340px;object-fit:contain;margin-top:0;margin-bottom:16px;margin-left:-30px;"/>
-  <span class="hero-tag" style="margin-top:-40px;">East Texas Site Work &amp; Demolition</span>
-  <h1 class="hero-title">Lonestar<br/><span>Landworks</span></h1>
-  <p class="hero-sub">Kilgore, TX &mdash; Built to Get It Done</p>
+  <span class="hero-tag" style="margin-top:-40px;">Kilgore, TX &mdash; Lonestar Landworks</span>
+  <h1 class="hero-title">East Texas<br/><span>Pads, Driveways</span><br/>&amp; Dirt Work</h1>
+  <p class="hero-sub">Mobile Home Pads &middot; Gravel Driveways &middot; Sod &middot; Flagstone</p>
   <div class="hero-btns">
     <a href="#contact" class="btn-primary">Request a Free Quote &rarr;</a>
     <a href="#beforeafter" class="btn-outline">See Our Work</a>
@@ -548,33 +592,37 @@
 <!-- SERVICES -->
 <section id="services">
   <span class="section-tag">What We Do</span>
-  <h2 class="section-title">Services</h2>
+  <h2 class="section-title">Our Services</h2>
   <div class="divider"></div>
   <div class="services-grid">
-    <div class="service-card">
-      <span class="service-icon">🌿</span>
-      <div class="service-name">Sod Installation</div>
-      <p class="service-desc">St. Augustine, Bermuda, and more — installed right so it takes root and stays put.</p>
-    </div>
-    <div class="service-card">
-      <span class="service-icon">🏗️</span>
-      <div class="service-name">Site Prep &amp; Grading</div>
-      <p class="service-desc">Ground graded level and compacted right before any build, sod, or concrete work starts.</p>
-    </div>
-    <div class="service-card">
-      <span class="service-icon">📐</span>
+    <a class="service-card" href="pad-construction.html">
+      <span class="service-icon">🏠</span>
       <div class="service-name">Pad Construction</div>
-      <p class="service-desc">Mobile home pads, house pads, RV pads, conex pads — built to spec and ready for placement.</p>
-    </div>
+      <p class="service-desc">Mobile home pads, house pads, RV pads, conex pads — built to spec with red select clay, properly compacted and ready for placement.</p>
+      <span class="service-link">Learn More &rarr;</span>
+    </a>
+    <a class="service-card" href="driveways-grading.html">
+      <span class="service-icon">🛤️</span>
+      <div class="service-name">Driveways &amp; Grading</div>
+      <p class="service-desc">Road base, caliche, and gravel driveways graded and built to hold up to East Texas weather and heavy traffic.</p>
+      <span class="service-link">Learn More &rarr;</span>
+    </a>
+    <a class="service-card" href="sod-landscaping.html">
+      <span class="service-icon">🌱</span>
+      <div class="service-name">Sod &amp; Landscaping</div>
+      <p class="service-desc">Site grading, lawn leveling, and sod installation — St. Augustine, Bermuda, and more. Installed right so it takes root and stays put.</p>
+      <span class="service-link">Learn More &rarr;</span>
+    </a>
+    <a class="service-card" href="flagstone-hardscaping.html">
+      <span class="service-icon">🪨</span>
+      <div class="service-name">Flagstone &amp; Hardscaping</div>
+      <p class="service-desc">Flagstone patios, walkways, and natural stone hardscaping. Built to last and add lasting value to your property.</p>
+      <span class="service-link">Learn More &rarr;</span>
+    </a>
     <div class="service-card">
       <span class="service-icon">🌲</span>
       <div class="service-name">Land &amp; Lot Clearing</div>
       <p class="service-desc">Brush, trees, stumps, and debris — cleared and hauled so you've got usable ground.</p>
-    </div>
-    <div class="service-card">
-      <span class="service-icon">🛤️</span>
-      <div class="service-name">Driveways &amp; Roads</div>
-      <p class="service-desc">Road base and gravel driveways built to hold up to East Texas weather and heavy traffic.</p>
     </div>
     <div class="service-card">
       <span class="service-icon">💥</span>
@@ -587,7 +635,7 @@
       <p class="service-desc">Standing water and drainage problems solved with properly installed French drain systems.</p>
     </div>
     <div class="service-card">
-      <span class="service-icon">🔩</span>
+      <span class="service-icon">🔧</span>
       <div class="service-name">Fence Removal</div>
       <p class="service-desc">Old fencing pulled and hauled off clean — wood, wire, t-posts, whatever's there.</p>
     </div>
@@ -670,9 +718,9 @@
         <span class="ba-tag after">After</span>
       </div>
       <div class="ba-container" id="baSlider3">
-        <img class="ba-after-img" src="images/sod-after-1.jpg" alt="Sod installation after - Lonestar Landworks East Texas"/>
+        <img class="ba-after-img" src="images/sod-after-1.jpg" alt="Sod installation after - Lonestar Landworks Kilgore TX"/>
         <div class="ba-before-overlay" id="baOverlay3">
-          <img src="images/sod-before-1.jpg" alt="Yard before sod installation - Lonestar Landworks"/>
+          <img src="images/sod-before-1.jpg" alt="Yard before sod installation - Lonestar Landworks Kilgore TX"/>
         </div>
         <div class="ba-handle" id="baHandle3"><div class="ba-handle-circle">&#8596;</div></div>
       </div>
@@ -686,7 +734,7 @@
       <div class="ba-container" id="baSlider4">
         <img class="ba-after-img" src="images/sod-after-2.jpg" alt="Sod installation completed - Lonestar Landworks Kilgore TX"/>
         <div class="ba-before-overlay" id="baOverlay4">
-          <img src="images/sod-before-2.jpg" alt="Yard before sod - Lonestar Landworks"/>
+          <img src="images/sod-before-2.jpg" alt="Yard before sod - Lonestar Landworks Kilgore TX"/>
         </div>
         <div class="ba-handle" id="baHandle4"><div class="ba-handle-circle">&#8596;</div></div>
       </div>
@@ -956,11 +1004,12 @@
         <label>Service Needed *</label>
         <select id="fservice">
           <option value="">Select a service...</option>
-          <option>Sod Installation</option>
-          <option>Site Prep &amp; Grading</option>
           <option>Pad Construction</option>
+          <option>Driveways &amp; Grading</option>
+          <option>Sod Installation</option>
+          <option>Flagstone &amp; Hardscaping</option>
+          <option>Site Prep &amp; Grading</option>
           <option>Land &amp; Lot Clearing</option>
-          <option>Driveways &amp; Roads</option>
           <option>Demolition</option>
           <option>French Drains</option>
           <option>Fence Removal</option>
@@ -980,11 +1029,12 @@
   <img src="https://raw.githubusercontent.com/LonestarLandworks/LonestarLandworks.github.io/main/logo-circle.png" alt="Lonestar Landworks Logo" style="width:300px;height:300px;object-fit:contain;display:block;margin-left:-20px;margin-bottom:-20px;"/>
   <div class="footer-logo">LONESTAR <span>LANDWORKS</span> &amp; DEMOLITION</div>
   <ul class="footer-links">
-    <li><a href="#services">Services</a></li>
+    <li><a href="pad-construction.html">Pad Construction</a></li>
+    <li><a href="driveways-grading.html">Driveways &amp; Grading</a></li>
+    <li><a href="sod-landscaping.html">Sod &amp; Landscaping</a></li>
+    <li><a href="flagstone-hardscaping.html">Flagstone &amp; Hardscaping</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#beforeafter">Before &amp; After</a></li>
-    <li><a href="#reviews">Reviews</a></li>
-    <li><a href="#faq">FAQ</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="https://www.facebook.com/share/1HNFUdAgVR/" target="_blank">Facebook</a></li>
   </ul>
